@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mayank Sharma - Visual Storyteller Portfolio">
+  <title>Mayank Sharma | Visual Storyteller</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #111;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: slideDown 1s ease forwards;
+    }
+    nav a {
+      color: #f5c518;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+    h1, h2 {
+      color: #f5c518;
+      margin-bottom: 1rem;
+    }
+    .project, .service {
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .highlight {
+      background: #222;
+      padding: 1rem;
+      border-left: 5px solid #f5c518;
+      animation: fadeIn 2s ease forwards;
+    }
+    .contact a {
+      color: #f5c518;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mayank Sharma - Visual Storyteller</h1>
+    <p>Capturing stories through the lens with passion and purpose.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="highlight" id="welcome">
+    <p>👋 Welcome to my creative portfolio</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Mayank Sharma, a passionate visual storyteller specializing in photography and cinematography. With a keen eye for detail and creative composition, I bring stories to life through my lens.</p>
+  </section>
+
+  <section id="expertise">
+    <h2>Expertise</h2>
+    <div class="grid">
+      <div>
+        <h3>Photography</h3>
+        <ul>
+          <li>Portrait Photography</li>
+          <li>Event Coverage</li>
+          <li>Commercial Photography</li>
+          <li>Landscape Photography</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cinematography</h3>
+        <ul>
+          <li>Short Films</li>
+          <li>Documentary Work</li>
+          <li>Corporate Videos</li>
+          <li>Music Videos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div>
+        <h3>Commercial Work</h3>
+        <ul>
+          <li>Brand Campaign Videos</li>
+          <li>Product Photography</li>
+          <li>Corporate Events</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Creative Projects</h3>
+        <ul>
+          <li>Short Film: "Urban Stories"</li>
+          <li>Photo Series: "City Lights"</li>
+          <li>Documentary: "Local Artists"</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipment">
+    <h2>Equipment</h2>
+    <ul>
+      <li>Sony A7 III</li>
+      <li>Canon 5D Mark IV</li>
+      <li>Lenses: 24-70mm f/2.8, 70-200mm f/2.8, 50mm f/1.4</li>
+      <li>Stabilizers: DJI Ronin-S, Tripods</li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>Services & Pricing</h2>
+    <div class="service">
+      <h3>Photography Packages</h3>
+      <ul>
+        <li>Basic: 2-hour shoot, 20 edited photos</li>
+        <li>Standard: 4-hour shoot, 50 edited photos</li>
+        <li>Premium: Full-day shoot, 100+ edited photos</li>
+      </ul>
+    </div>
+    <div class="service">
+      <h3>Video Production</h3>
+      <ul>
+        <li>Corporate Videos: Starting from $1000</li>
+        <li>Event Coverage: Custom quotes</li>
+        <li>Short Films: Project-based pricing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mayank@example.com">mayank@example.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+    <p>Portfolio: <a href="http://www.mayanksharma.com" target="_blank">www.mayanksharma.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/mack_frames" target="_blank">@mack_frames</a></p>
+  </section>
+
+  <footer>
+    <p>💡 Ready to bring your vision to life? Let's connect and create something amazing together!</p>
+  </footer>
+</body>
+</html>
